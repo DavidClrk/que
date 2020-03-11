@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+  head
+    title Tokens
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/vue-material.css">
+    link(rel='stylesheet' href='/styles.bundle.css')
+    style.
+      @media print {
+        * {
+          padding: 0;
+          margin: 0;
+        }
+        .container {
+          display: none;
+        }
+        #tokenprint {
+          display: block;
+        }
+        .print-header {
+          padding-top:10px;
+        }
+        .datePrinted {
+          float:left;
+          width:45%;
+          font-size:8px;
+          padding-left:10px;
+        }
+        .office-name {
+          float:left;
+          width:45%;
+          font-size:8px;
+          text-align:right;
+          padding-right:10px;
+        }
+        .office-title {
+          clear:both;
+          text-align:center;
+          padding-top:10px;
+          font-size:24px;
+          padding-bottom: 10px;
+        }
+        .queue-title {
+          clear:both;
+          text-align:center;
+          padding-top:10px;
+          font-size:20px;
+          padding-bottom: 10px;
+        }
+        .queue-no {
+          text-align:center;
+          font-size:24px;
+          padding-top:10px;
+          padding-bottom: 20px;
+        }
+        .queue-msg {
+          text-align:center;
+          font-size:12px;
+          padding-bottom:2px;
+        }
+        .dateTimePrinted {
+          text-align:center;
+          font-size:8px;
+          padding-bottom:2px;
+        }
+      }
+      @media screen {
+        * {
+          padding: 0;
+          margin: 0;
+        }
+        .container {
+          display: block;
+        }
+        #tokenprint {
+          display: none;
+        }
+      }
+      body {
+        font-family: Roboto,Noto Sans,Noto,sans-serif,Faruma!important;
+      }
+  body
+    #app-container
+    script(src='token.bundle.js')

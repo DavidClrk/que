@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Q
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton")
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/animate.min.css")
+    link(rel="stylesheet" href="/styles.bundle.css")
+    style.
+      body {
+        background-color: #000;
+        font-family: 'Anton', sans-serif;
+        width: 1920px;
+        height: 1080px;
+      }
+
+      @font-face{
+      font-family: 'MV_AWaheed';
+        src: url('/fonts/mvawaheedbd.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .dv {
+        font-family: MV_AWaheed;
+        direction: rtl;
+      }
+
+      .grey {
+        background-color: #111;
+      }
+
+      .rc {
+        border-radius: 6px;
+      }
+      .magic {
+        animation-iteration-count: 2;
+      }
+      .marquee {
+        width: 300%;
+        overflow: hidden;
+      }
+
+  body
+    #app-container
+    script(src="/js/jquery.min.js")
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/jquery.marquee.min.js")
+    script(src='socket.io/socket.io.js')
+    script(src='app.bundle.js')

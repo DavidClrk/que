@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+  head
+    title Counter
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/vue-material.css">
+    link(rel='stylesheet' href='/styles.bundle.css')
+    style.
+      body {
+        font-family: Roboto,Noto Sans,Noto,sans-serif,Faruma!important;
+      }
+      .counter-menu {
+        font-size: 28px;
+        line-height: 65px;
+      }
+      .counter-menu .md-list-item-container {
+        font-size: 28px;
+        line-height: 65px;
+      }
+      /*.md-list-item .md-list-item-container {
+        font-size: 30px;
+        line-height: 60px;
+      }
+      .md-menu-content {
+        width: 350px;
+      }*/
+      .counter-value {
+        color: #ff0000;
+        font-family: Digital-7,sans-serif,Faruma;
+        font-size: 120px;
+        line-height: 140px;
+        text-align: center;
+        width: 100%;
+      }
+  body
+    #app-container
+    script(src='socket.io/socket.io.js')
+    script(src='counter.bundle.js')
